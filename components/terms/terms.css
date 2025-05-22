@@ -1,0 +1,32 @@
+.legal {
+  padding: 0 20px;
+}
+.legal h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.legal p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  line-height: 26px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.legal h4 {
+  margin: 15px 0;
+  letter-spacing: 2.5px;
+}
+
+.legal h5 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

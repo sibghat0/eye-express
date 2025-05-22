@@ -1,0 +1,194 @@
+.support {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.support .left {
+  width: 70%;
+}
+
+.support h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #000;
+  letter-spacing: 3px;
+}
+
+.support .left p {
+  margin-bottom: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.support .left .inputs {
+  width: 70%;
+}
+
+.support .left .inputs .split {
+  width: 100%;
+  display: flex;
+  margin: 20px 0;
+}
+
+.support .left .inputs .split .marginRight {
+  margin-right: 20px;
+}
+
+.support .left .inputs .textArea textarea {
+  height: 100px !important;
+}
+
+.support .left button {
+  background-color: #334756;
+  color: #fff;
+  margin-top: 30px;
+}
+.support .left button.MuiButton-root {
+  letter-spacing: 3px !important;
+  border-radius: 0 !important;
+}
+.support .right h3:first-child {
+  display: none;
+}
+
+.support .right .contacts-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.support .right .contacts-container .contact-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  margin-bottom: 60px;
+  color: #48695c;
+}
+
+.support .right .contacts-container .contact-div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #334756;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.support .right .contacts-container .contact-div a {
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  color: #000;
+}
+
+.support .right .contacts-container .contact-div h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 1024px) {
+  .support .left {
+    width: 60%;
+    padding: 50px 25px;
+  }
+
+  .support h3 {
+    font-size: 20px;
+  }
+
+  .support .left .inputs {
+    width: 90%;
+  }
+
+  .support .right {
+    width: 40%;
+  }
+}
+
+@media (max-width: 720px) {
+  .support {
+    flex-direction: column;
+  }
+
+  .support .left,
+  .support .right {
+    width: 100%;
+  }
+
+  .support .left .inputs {
+    width: 100%;
+  }
+
+  .support .right h3:first-child {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .support .right .contacts-container {
+    flex-direction: row;
+    margin-top: 30px;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .support .right .contacts-container .line {
+    margin: 0 10px;
+    width: 2px;
+    background-color: #ccc;
+  }
+
+  .support .right .contacts-container .contact-div {
+    margin-bottom: 0;
+    /* margin-right: 30px; */
+  }
+
+  .support .right .contacts-container .contact-div h3 {
+    margin: 0;
+  }
+
+  /* .support .right .contacts-container .contact-div:first-child {
+    padding-right: 30px;
+    border-right: 2px solid #ccc;
+  } */
+}
+
+@media (max-width: 632px) {
+  .support {
+    padding-top: 20px;
+  }
+  .support .right .contacts-container .contact-div a {
+    font-size: 14px;
+  }
+
+  .support .right .contacts-container .contact-div h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 538px) {
+  .support .right .contacts-container .contact-div:last-child {
+    margin-right: 0;
+  }
+
+  .support .right .contacts-container .contact-div a {
+    letter-spacing: 0;
+  }
+
+  .support .right .contacts-container .contact-div h3 {
+    letter-spacing: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+}

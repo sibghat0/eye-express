@@ -1,0 +1,391 @@
+.profile {
+  padding: 60px 0;
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.profile .logout-btn {
+  padding: 15px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #eee;
+  background-color: #dc143c;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  position: absolute;
+  top: 40px;
+  right: -70px;
+}
+
+.profile .logout-btn p {
+  margin-top: 5px;
+}
+
+.profile .inner-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profile .top {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile .top .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile .top .left label {
+  position: relative;
+}
+
+.profile .top .left label::after {
+  position: absolute;
+  content: "+";
+  bottom: 25px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 50%;
+  background-color: green;
+  cursor: pointer;
+}
+.profile .top .left img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* .profile .left label {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.profile .left label input {
+  display: none;
+}
+
+.profile .left label i {
+  font-size: 45px;
+} */
+
+.profile .edit-btn {
+  width: 180px;
+  padding: 8px 10px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  background-color: #333;
+  color: #fff;
+  border-radius: 30px;
+  /* position: absolute;
+  top: -50px;
+  right: 0; */
+  /* position: fixed; */
+  /* top: auto; */
+  /* left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px; */
+  z-index: 9;
+}
+
+.profile .edit-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.profile .top .buttons {
+  width: fit-content;
+  align-self: flex-start;
+  margin-top: 20px;
+  margin-left: 60px;
+  /* position: absolute;
+  top: auto;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%); */
+}
+.profile .top .buttons .edit-btn {
+  margin: 0 10px;
+  position: static;
+  transform: none;
+}
+.profile .top .right {
+  margin-top: 40px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  /* align-items: center; */
+}
+.profile.edit .top .right {
+  width: 100%;
+}
+.profile .top .right p {
+  white-space: nowrap;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #707070;
+}
+
+.profile .top .right p span {
+  font-weight: 500;
+  color: #333;
+  margin-right: 10px;
+}
+.profile .bottom {
+  width: 100%;
+  margin-top: 30px;
+}
+.profile .bottom h4 {
+  color: #333;
+  font-size: 25px;
+  margin: 0 0 30px;
+  position: relative;
+  width: fit-content;
+}
+
+.profile .bottom h4::before {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background-color: #333;
+  left: 0px;
+  border-radius: 5px;
+  bottom: -5px;
+}
+.profile .bottom .address-container {
+  width: 100%;
+}
+
+.profile .bottom .address {
+  margin: 10px 0;
+  padding: 0 10px;
+  line-height: 21px;
+  padding-bottom: 10px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+}
+.profile .bottom .address p {
+  margin: 0px 5px 8px;
+  text-transform: capitalize;
+  text-align: left;
+  font-weight: 400;
+}
+.profile .bottom .address i {
+  margin-right: 10px;
+  color: #f25954;
+}
+.profile .bottom .address span i {
+  cursor: pointer;
+}
+.profile .bottom .add-address {
+  padding: 10px;
+  font-size: 14px;
+}
+.profile .bottom .add-address i {
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  font-size: 16px;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+/* .profile.edit .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+.profile.edit .right input {
+  margin: 0;
+}
+.profile .MuiFormControl-root {
+  width: 70%;
+  margin: 5px 0;
+}
+
+@media (max-width: 1115px) {
+  .profile .top .buttons {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 958px) {
+  .profile .top {
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .profile .top .buttons {
+    position: static;
+    transform: none;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 890px) {
+  .profile .top .left img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .profile .edit-btn {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 780px) {
+  .profile {
+    width: 90%;
+  }
+
+  .profile .logout-btn {
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .profile .logout-btn p {
+    display: none;
+  }
+
+  .profile .top {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .profile .top .left,
+  .profile .top .right {
+    width: 100%;
+    /* align-items: center; */
+  }
+  .profile.edit {
+    width: 90%;
+  }
+
+  .profile .top .left {
+    align-items: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .profile {
+    padding: 20px 0 60px;
+  }
+  .profile .top .left {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .profile .top .left img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile .top .right {
+    margin-top: 0;
+  }
+
+  .profile .top .right p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .address .add {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .profile .bottom .address p {
+    margin: 5px 0 0;
+    line-height: 23px;
+  }
+  .profile .edit-btn {
+    height: 40px;
+    /* position: fixed;
+    bottom: 80px;
+    z-index: 5; */
+    /* left: 50%;
+    transform: translateY(-50%); */
+  }
+
+  .profile .top .buttons {
+    width: 100%;
+    position: static;
+    bottom: 100px;
+    left: 50%;
+    display: flex;
+  }
+
+  .profile .top .buttons button {
+    width: 40% !important;
+  }
+
+  .profile .bottom .address {
+    border-bottom: 1px solid #ccc;
+  }
+  .profile .MuiFormControl-root {
+    width: 95%;
+    margin: 5px 0;
+  }
+  .profile .top .left label::after {
+    bottom: 5px;
+    right: 5px;
+  }
+  /* .profile .top .buttons {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  } */
+  .profile .top .buttons .edit-btn {
+    width: 80%;
+  }
+}
+
+@media (max-width: 360px) {
+  .profile .bottom .address {
+    margin: 10px 0;
+    /* border-bottom: 1px solid #ccc; */
+  }
+}

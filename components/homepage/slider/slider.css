@@ -1,0 +1,21 @@
+.slider {
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.swiper-container {
+  height: 100%;
+}
+.slider img {
+  width: 95%;
+  height: 100%;
+  border-radius: 10px;
+}
+.slider .swiper-wrapper .swiper-slide-active {
+  margin-right: 0px !important;
+}
+@media (max-width: 500px) {
+  .slider {
+    height: 150px;
+  }
+}

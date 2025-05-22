@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="active_icon" data-name="active icon" transform="translate(-829 -483)">
+    <path id="circle-check" d="M20,12ZM2,12A10,10,0,1,1,12,22,10,10,0,0,1,2,12ZM16.664,8.753a1,1,0,0,1,.083,1.412l-5.333,6a1,1,0,0,1-1.495,0l-2.667-3a1,1,0,0,1,1.495-1.329l1.919,2.159,4.586-5.159A1,1,0,0,1,16.664,8.753Z" transform="translate(827 481)" fill="#6dd3b6"/>
+    <path id="circle-check-2" data-name="circle-check" d="M16.664,8.753a1,1,0,0,1,.083,1.412l-5.333,6a1,1,0,0,1-1.495,0l-2.667-3a1,1,0,0,1,1.495-1.329l1.919,2.159,4.586-5.159A1,1,0,0,1,16.664,8.753Z" transform="translate(827 481)" fill="#fff"/>
+  </g>
+</svg>

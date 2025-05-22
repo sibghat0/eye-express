@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "site": "e-commerce9",
+    "public": "./Build",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+@import "../../../../variable.css";
+.AboutUs {
+  width: 95%;
+  margin: 30px auto 50px;
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.AboutUs h1 {
+  color: var(--heading);
+  margin: 2rem 0;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding: 0 15px;
+  width: max-content;
+}
+.AboutUs .line {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--line);
+  transform: translate(-50%, -50%);
+  top: 11%;
+  left: 50%;
+}
+
+.AboutUs .about-p {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.AboutUs .about-p .secondsec-imgcontainer {
+  width: 550px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 0 30px;
+  background-color: #fff;
+}
+.AboutUs .about-p .secondsec-imgcontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.AboutUs .about-p p {
+  width: 45%;
+  /* margin-top: 40px; */
+  margin-left: 70px;
+  color: #030303;
+  font-size: 20px;
+  box-sizing: border-box;
+  font-weight: 500;
+  line-height: 35px;
+  font-style: none;
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+}
+
+.AboutUs .about-p p b {
+  padding-right: 4px;
+  font-size: 30px;
+  color: #166560;
+}
+
+@media (max-width: 1024px) {
+  .AboutUs .about-p .secondsec-imgcontainer {
+    width: 400px;
+  }
+  .AboutUs .about-p p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 935px) {
+  .AboutUs .line {
+    top: 53px;
+  }
+  .AboutUs .about-p .secondsec-imgcontainer {
+    width: 80%;
+    height: fit-content;
+    margin-bottom: 50px;
+  }
+  .AboutUs .about-p {
+    flex-direction: column;
+  }
+  .AboutUs .about-p p {
+    font-size: 20px;
+    margin: 0;
+    width: 70%;
+  }
+}
+
+@media (max-width: 680px) {
+  .AboutUs h1 {
+    font-size: 20px;
+  }
+  .AboutUs .line {
+    top: 46.5px;
+  }
+  .AboutUs .about-p p b {
+    font-size: 25px;
+  }
+  .AboutUs .about-p .secondsec-imgcontainer {
+    width: 95%;
+    /* height: 400px; */
+  }
+  .AboutUs .about-p p {
+    font-size: 17px;
+    width: 95%;
+    margin: 0 auto;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 368px) {
+  .AboutUs .about-p p {
+    font-size: 16px;
+  }
+}

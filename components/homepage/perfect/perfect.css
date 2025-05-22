@@ -1,0 +1,67 @@
+.Perfect {
+  width: 95%;
+  position: relative;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Perfect h4 {
+  color: var(--heading);
+  font-size: 30px;
+  font-weight: 500;
+
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  background-color: #fff;
+  padding: 0 15px;
+  width: max-content;
+  z-index: 1;
+}
+
+.Perfect .line {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--line);
+  transform: translate(-50%, -50%);
+  top: 23px;
+  left: 50%;
+  z-index: 0;
+}
+
+.Perfect .imgContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.Perfect .imgContainer .left {
+  width: 50%;
+}
+
+.Perfect .imgContainer .right {
+  width: 50%;
+  margin-left: 5px;
+}
+
+.Perfect .imgContainer .left a img {
+  width: 100%;
+  margin: 3.5px;
+}
+
+.Perfect .imgContainer .right a img {
+  width: 100%;
+  margin: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .Perfect h4 {
+    font-size: 20px;
+  }
+  .Perfect .line {
+    top: 14px;
+  }
+}

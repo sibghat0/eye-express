@@ -1,0 +1,27 @@
+.notFound {
+  min-height: 83.5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFound.order {
+  min-height: 78vh;
+}
+
+.notFound h1 {
+  margin: 20px;
+  font-weight: 500;
+}
+
+.notFound button {
+  text-transform: none;
+  background-color: #2d6cdf;
+  color: #fff;
+}
+
+.notFound button:hover {
+  background-color: #482ff7;
+}

@@ -1,0 +1,211 @@
+@import "../../../variable.css";
+.orderPage {
+  min-height: 73.5vh;
+  width: 85%;
+  margin: 0 auto 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.orderPage h1.heading {
+  color: var(--heading);
+  font-size: 35px;
+  margin: 30px 0 20px;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+}
+.orderPage h1.heading:after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 4px;
+  background-color: var(--heading);
+  left: 0px;
+  border-radius: 5px;
+  bottom: -10px;
+}
+.orderPage .main {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+  box-shadow: 2px 2px 6px 0 #c5c5c5;
+}
+.orderPage .main .tabBar {
+  width: 20%;
+  padding: 1rem 0;
+  box-shadow: 2px 2px 6px 0 #c5c5c5;
+  border-radius: 3px;
+}
+.orderPage .MuiTab-wrapper {
+  align-items: flex-start;
+}
+.orderPage .MuiTab-root {
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+  margin: 7px 0;
+}
+.orderPage .MuiTab-root:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.orderPage .MuiTab-textColorInherit.Mui-selected {
+  background-color: rgba(0, 0, 0, 0.08);
+  font-weight: 500;
+}
+.orderPage .PrivateTabIndicator-vertical-4 {
+  height: 48px !important;
+  width: 5px;
+}
+.orderPage .right-orders {
+  width: 78%;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 2px 6px 0 #c5c5c5;
+}
+.orderPage .right-orders p.all-order {
+  color: #707070;
+  font-size: 16px;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+.orderPage p.all-order:after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: #707070;
+  left: 0px;
+  border-radius: 5px;
+  bottom: -10px;
+}
+.orderPage .w-list {
+  width: 100%;
+  height: 85%;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  overflow-y: scroll;
+}
+
+.orderPage .noItems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  font-weight: 500;
+}
+
+.orderPage .noItems h1 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.orderPage .noItems button {
+  text-transform: none;
+  background-color: #2d6cdf;
+  color: #fff;
+}
+.orderPage .tabs-phone {
+  display: none;
+}
+@media (max-width: 900px) {
+  .orderPage {
+    width: 90%;
+  }
+  .orderPage h1.heading {
+    display: none;
+  }
+  .orderPage .main {
+    margin-top: 15px;
+    flex-direction: column;
+    box-shadow: none;
+    height: auto;
+  }
+  .orderPage .main .tabBar {
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+  }
+  .orderPage .tabs {
+    display: none;
+  }
+  .orderPage .tabs-phone {
+    display: flex;
+  }
+  .orderPage .MuiTabs-flexContainer {
+    /* flex-direction: row; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(5, 1fr); */
+  }
+  .orderPage .MuiTab-root {
+    margin: 0;
+  }
+  .orderPage .MuiTab-wrapper {
+    align-items: center;
+  }
+  .orderPage .right-orders {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: none;
+  }
+  .orderPage .right-orders p.all-order {
+    display: none;
+  }
+  .orderPage .right-orders .w-list {
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #fff;
+    padding: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .orderPage {
+    width: 95%;
+  }
+
+  .orderPage h1 {
+    margin: 10px 0 5px;
+    font-size: 28px;
+  }
+  .orderPage h1:after {
+    width: 100px;
+    bottom: 0px;
+    left: 2px;
+  }
+}
+@media (min-width: 600px) {
+  .orderPage .MuiTab-root {
+    min-width: 0;
+  }
+}
+@media (max-width: 550px) {
+  .orderPage .MuiTabs-flexContainer {
+    /* overflow-x: scroll !important; */
+    /* display: flex; */
+  }
+
+  .orderPage .tabBar ::-webkit-scrollbar {
+    width: 20px;
+    height: 2px;
+  }
+  .orderPage .MuiTab-root {
+    /* width: 40%; */
+    width: 100px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 468px) {
+  .orderPage .right-orders p.all-order {
+    margin: 10px 15px;
+  }
+}
